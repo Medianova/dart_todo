@@ -1,0 +1,29 @@
+<div class="mui-container-fluid">
+    <div class="mui-row">
+        <div class="mui-col-md-4">
+        </div>
+        <div class="mui-col-md-4">
+            <div class="mui-panel">
+
+				<div class="mui--text-black-87 mui--text-title">
+				    <span>Login</span>
+				</div>
+
+				<form>
+				    <div class="mui-textfield">
+				        <input type="text" placeholder="Username" #username class="mui--is-empty mui--is-dirty">
+				    </div>
+
+				    <div class="mui-textfield">
+				        <input type="password" placeholder="Password" #password class="mui--is-empty mui--is-dirty">
+				    </div>
+
+				    <button class="mui-btn mui-btn--raised mui-btn--primary mui-btn--null" (click)="login(username.value, password.value)">Log in</button>
+				</form>
+
+            </div>
+        </div>
+        <div class="mui-col-md-4">
+        </div>
+    </div>
+</div>

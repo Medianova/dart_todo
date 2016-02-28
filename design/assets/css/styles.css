@@ -1,0 +1,149 @@
+html{
+  width:100%;
+  height:100%;
+  padding:0;
+}
+
+body{
+  width:100%;
+  height:100%;
+  padding:0;
+}
+
+div#main-container.container-fluid{
+  padding:0;
+  height:100%;
+  background-image:url(../../assets/img/tasker_bg_2.png);
+  background-size:cover;
+}
+
+div#login-container.row{
+  padding:0;
+  height:100%;
+  margin:0;
+  display:flex;
+  flex-direction:column;
+  flex-wrap:nowrap;
+  justify-content:center;
+}
+
+div#login-column.col-lg-4.col-md-8.col-sm-10.col-xs-12{
+  height:320px;
+  border:1px solid #eee;
+  box-shadow:0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background:#fff;
+}
+
+span#login-error-message.form-control-feedback.glyphicon.glyphicon-ban-circle{
+  left:0;
+}
+
+button#login-button.btn.btn-primary{
+}
+
+p#login-error-message.bg-danger{
+  padding:7px 10px 6px 10px;
+  display:inline-block;
+}
+
+, BoxShadowHelper(@level: 1){
+  background:#fff;
+  padding:20px;
+  padding-bottom:0;
+}
+
+div#login-column{
+  padding:20px 20px 0 20px;
+  background:#f4f4f4;
+  -webkit-transition:all 250ms;
+  -moz-transition:all 250ms;
+  transition:all 250ms;
+  box-shadow:0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height:244px;
+}
+
+div#login-title-column{
+  vertical-align:middle;
+  padding-bottom:20px;
+}
+
+img#tasker-logo{
+  width:64px;
+  display:inline-block;
+  float:left;
+  margin:20px 5px 0 0;
+}
+
+h1#tasker-title{
+  display:inline-block;
+  float:left;
+}
+
+div#clear-title{
+  clear:both;
+}
+
+div#login-message-column{
+  padding-top:50px;
+}
+
+span#login-options{
+  margin-top:7px;
+  display:inline-block;
+}
+
+ul#main-menu{
+  margin-bottom:20px;
+}
+
+div#app-main-container{
+  height:calc(100% - 83px);
+}
+
+div#app-main-row{
+  height:100%;
+}
+
+div#app-calendar{
+  height:100%;
+  background:#888;
+  padding:20px;
+  overflow-y:auto;
+}
+
+div#app-tasks{
+  height:100%;
+}
+
+img#app-logo{
+  display:inline-block;
+  float:left;
+  margin:-6px 4px 0 0;
+}
+
+a#app-title{
+  font-size:1.4em;
+  height:43px;
+}
+
+span#app-title-text{
+  display:inline-block;
+  margin-top:-4px;
+  float:right;
+  clear:right;
+}
+
+h1#weekly-title{
+  font-size:1.5em;
+  text-align:center;
+  margin:0;
+}
+
+span#weekly-move-left{
+  padding-top:3px;
+}
+
+div#weekly-move-right{
+  padding-top:0px;
+}
+

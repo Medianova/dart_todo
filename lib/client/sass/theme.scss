@@ -1,0 +1,96 @@
+// main: main.sass
+
+html{
+  width:100%;
+  height:100%;
+  padding:0;
+}
+
+body{
+  width:100%;
+  height:100%;
+  min-height:500px;
+  padding:0;
+}
+
+a {
+  cursor: pointer;
+}
+
+div#main-container.container-fluid{
+  padding:0;
+  height:100%;
+  background-image:url(../../assets/img/tasker_bg_2.png);
+  background-size:cover;
+}
+
+img#tasker-logo{
+  width:64px;
+  display:inline-block;
+  float:left;
+  margin:20px 5px 0 0;
+}
+
+h1#tasker-title{
+  display:inline-block;
+  float:left;
+}
+
+div#clear-title{
+  clear:both;
+}
+
+ul#main-menu{
+  margin-bottom:20px;
+}
+
+div#app-main-container{
+  height:calc(100% - 83px);
+}
+
+div#app-main-row{
+  height:calc(100% - 40px);
+}
+
+div#app-calendar{
+  height:100%;
+  background-color:#888;
+  padding:20px;
+  overflow-y: auto;
+}
+
+div#app-tasks{
+  height:100%;
+}
+
+img#app-logo{
+  display:inline-block;
+  float:left;
+  margin:-6px 4px 0 0;
+}
+
+a#app-title{
+  font-size:1.4em;
+  height:43px;
+}
+
+span#app-title-text{
+  display:inline-block;
+  margin-top:-4px;
+  float:right;
+  clear:right;
+}
+
+h1#weekly-title{
+  font-size:1.5em;
+  text-align:center;
+  margin:0;
+}
+
+span#weekly-move-left{
+  padding-top:3px;
+}
+
+div#weekly-move-right{
+  padding-top:0px;
+}

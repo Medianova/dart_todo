@@ -1,5 +1,0 @@
-<ul class="mui-list--unstyled">
-    <li *ngFor="#task of taskList" (click)="onSelectTask(task)">
-        <span [ngClass]="{active: task.active, disabled: !task.active}">{{task.name}}</span>
-    </li>
-</ul>

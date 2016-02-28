@@ -1,21 +1,26 @@
-name: 'todoTest'
+name: todo2
+description: A Dart app that uses Angular 2
 version: 0.0.1
-description: An absolute bare-bones web app.
-#author: Your Name <email@example.com>
-#homepage: https://www.example.com
-
 environment:
-  sdk: '>=1.0.0 <2.0.0'
-
+  sdk: '>=1.13.0 <2.0.0'
 dependencies:
-  angular2: 2.0.0-beta.1
-  browser: '>=0.10.0 <0.11.0'
-  csso_transformer: any
-  dart_to_js_script_rewriter: '^0.1.0'
-  http: "^0.11.3+3"
-
+  angular2: 2.0.0-beta.6
+  browser: ^0.10.0
+dev_dependencies:
+  dart_to_js_script_rewriter: ^0.1.0
+  func: "^0.1.0"
 transformers:
-- dart_to_js_script_rewriter
 - angular2:
+    generate_template_cache: true
+    platform_directives:
+      - 'package:angular2/common.dart#COMMON_DIRECTIVES'
+    platform_pipes:
+      - 'package:angular2/common.dart#COMMON_PIPES'
     entry_points: web/main.dart
-- csso_transformer
+- $dart2js:
+    commandLineOptions:
+      - --trust-type-annotations
+      - --trust-primitives
+      - --enable-experimental-mirrors
+      - --dump-info
+- dart_to_js_script_rewriter

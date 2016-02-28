@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasker</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <ul class="nav nav-tabs" id="main-menu">
+        <li><a href="#" id="app-title"><span><img src="assets/img/calendar-icon.png" width="32" id="app-logo"></span><span id="app-title-text">Tasker </span> </a></li>
+        <li><a href="#">Categories </a></li>
+        <li><a href="#">Options </a></li>
+        <li id="main-menu-logout" class="pull-right"><a href="#">Logout </a></li>
+        <li id="main-menu-user" class="pull-right"><a href="#">borut@medianova.hr </a></li>
+    </ul>
+    <div class="container-fluid" id="app-main-container">
+        <div class="row" id="app-main-row">
+            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="app-calendar">
+                <ul class="list-group">
+                    <li class="list-group-item"><span class="pull-right"> <a href="#"><span class="glyphicon glyphicon-pencil"></span></a><a href="#"><span class="glyphicon glyphicon-ok"></span></a><a href="#"><span class="glyphicon glyphicon-trash"></span></a></span>
+                        <h4>Heading</h4>
+                        <p>Paragraph</p><span>Category 1</span></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="app-tasks">
+                <form>
+                    <button class="btn btn-primary btn-sm pull-right" type="button">New </button>
+                    <div class="form-group">
+                        <input class="form-control" type="text" placeholder="Title" autofocus="">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Description"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option value="12" selected="">This is item 1</option>
+                            <option value="13">This is item 2</option>
+                            <option value="14">This is item 3</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-warning btn-sm pull-right" type="button">Cancel </button>
+                    <button class="btn btn-success btn-sm" type="button">Save </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

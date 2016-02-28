@@ -1,0 +1,11 @@
+<navigation></navigation>
+<div class="container-fluid" id="app-main-container">
+    <div class="row" id="app-main-row">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8" id="app-calendar">
+          <tasks-list (selectTask)="onSelectedTaskChanged($event)"></tasks-list>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="app-tasks">
+          <task-crud [(task)]="currentTask" [(isNew)]="!isTaskFromList"></task-crud>
+        </div>
+    </div>
+</div>

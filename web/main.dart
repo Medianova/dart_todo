@@ -1,9 +1,6 @@
-import 'dart:async';
+import 'package:todo2/client/client.dart';
 
-import 'package:todoTest/todo.dart';
-
-Future main() async {
-
-  TodoApp app = new TodoApp();
-
+main() {
+  Client c = new Client();
+  c.run();
 }

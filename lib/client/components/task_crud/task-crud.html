@@ -1,0 +1,15 @@
+<form>
+    <div class="form-group">
+        <input class="form-control" type="text" placeholder="Title" [(ngModel)]="task.title" autofocus="">
+    </div>
+    <div class="form-group">
+        <textarea class="form-control" placeholder="Description"[(ngModel)]="task.description" ></textarea>
+    </div>
+    <div class="form-group">
+        <select class="form-control" [(ngModel)]="task.category">
+            <option *ngFor="#category of categories" value="{{category}}">{{category}}</option>
+        </select>
+    </div>
+    <button class="btn btn-primary btn-sm" type="button" (click)="onNewTask()">New</button>
+    <button *ngIf="task.isValid && isNew" class="btn btn-success btn-sm pull-right" type="button" (click)="onSaveTask()">Save</button>
+</form>

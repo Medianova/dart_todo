@@ -1,0 +1,12 @@
+<ul class="list-group">
+    <li *ngFor="#task of tasks" (click)="onSelectTask(task)" class="list-group-item">
+      <span class="pull-right">
+        <a (click)="onSelectTask(task)"><span class="glyphicon glyphicon-pencil"></span></a>
+        <a href="#"><span class="glyphicon glyphicon-ok"></span></a>
+        <a href="#"><span class="glyphicon glyphicon-trash"></span></a>
+      </span>
+      <h4>{{task.title}}</h4>
+      <p>{{task.description}}</p>
+      <span>{{task.category}}</span>
+    </li>
+</ul>

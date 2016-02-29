@@ -22,6 +22,8 @@ class LoginComponent {
   @Input() LoginData loginData = new LoginData();
   bool loginInvalid = false;
 
+  @Output() EventEmitter loginDone = new EventEmitter(true);
+
   LoginComponent(this._userApi, this._currentUser, this._router);
 
   void tryToLogin() {
@@ -29,7 +31,8 @@ class LoginComponent {
       loginInvalid = false;
       print("login valid");
       _currentUser.activateUser(user);
-      _router.navigate(['/Editor']);
+      loginDone.emit(user);
+      _router.navigate(['EditorRoute']);
     }).catchError((e) {
       loginInvalid = true;
       print(e.toString());

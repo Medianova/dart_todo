@@ -6,7 +6,10 @@ import 'package:todo2/client/services/category_service.dart';
 import 'package:todo2/client/services/task_service.dart';
 import 'package:todo2/client/models/task.dart';
 
-@Component(selector: 'task-crud', templateUrl: 'task-crud.html')
+@Component(
+    selector: 'task-crud',
+    templateUrl: 'task-crud.html',
+    styleUrls: const ['task-crud.min.css'])
 class TaskCrudComponent {
   CategoryService _categoryService;
   TaskService _taskService;

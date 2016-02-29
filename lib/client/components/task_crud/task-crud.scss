@@ -1,0 +1,11 @@
+.task-crud-form {
+  height: 100%;
+
+  .task-crud-description {
+    height: calc(100% - 147px);
+
+    textarea {
+      height: 100%;
+    }
+  }
+}

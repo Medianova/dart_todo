@@ -16,16 +16,17 @@ import 'package:todo2/client/components/editor/editor_component.dart';
   const Route(
       path: '/',
       component: EditorComponent,
-      name: 'Editor',
+      name: 'EditorRoute',
       useAsDefault: true),
-  const Route(path: '/login', component: LoginComponent, name: 'Login')
+  const Route(path: '/login', component: LoginComponent, name: 'LoginRoute')
 ])
 class AppComponent {
   Router _router;
   CurrentUser _currentUser;
+
   AppComponent(this._router, this._currentUser) {
     if (_currentUser.isActive == false) {
-      _router.navigate(['/Login']);
+      _router.navigate(['LoginRoute']);
     }
   }
 }

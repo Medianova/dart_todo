@@ -17,6 +17,6 @@ class NavigationComponent {
 
   void logout() {
     _currentUser.forget();
-    _router.navigate(['/Login']);
+    _router.navigate(['LoginRoute']);
   }
 }

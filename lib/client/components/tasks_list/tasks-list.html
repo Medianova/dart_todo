@@ -1,5 +1,5 @@
 <ul class="list-group">
-    <li *ngFor="#task of tasks" (click)="onSelectTask(task)" class="list-group-item task-list-item" [ngClass]="{done: task.active == false}">
+    <li *ngFor="#task of tasks" class="list-group-item task-list-item" [ngClass]="{done: task.active == false}">
       <span class="pull-right">
         <a (click)="onSelectTask(task)"><span class="glyphicon glyphicon-pencil"></span></a>
         <a (click)="onDeactivateTask(task)"><span class="glyphicon glyphicon-ok"></span></a>
@@ -10,3 +10,8 @@
       <span>{{task.category}}</span>
     </li>
 </ul>
+<prompt-dialog
+  [(title)]="areYouSureDialog.title"
+  [(message)]="areYouSureDialog.message"
+  *ngIf="areYouSureDialog.isVisible == true">
+</prompt-dialog>

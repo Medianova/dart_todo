@@ -1,0 +1,17 @@
+<div class="dialog">
+  <div class="overlay"></div>
+  <div class="dialog-container">
+    <div class="body">
+      <div class="header">
+        <h5 class="title">{{title}}</h5>
+      </div>
+      <div class="content">
+        <p>{{message}}</p>
+      </div>
+      <div class="footer">
+        <button class="btn btn-link btn-sm pull-right ok" type="button" (click)="onOkHandler()">OK</button>
+        <button class="btn btn-link btn-sm pull-right" type="button" (click)="onCancelHandler()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>

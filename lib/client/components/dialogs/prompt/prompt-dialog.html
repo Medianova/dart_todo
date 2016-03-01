@@ -9,8 +9,8 @@
         <p>{{message}}</p>
       </div>
       <div class="footer">
-        <button class="btn btn-link btn-sm pull-right ok" type="button" (click)="onOkHandler()">OK</button>
-        <button class="btn btn-link btn-sm pull-right" type="button" (click)="onCancelHandler()">Cancel</button>
+        <button class="btn btn-link btn-sm pull-right ok" type="button" (click)="onHandleAction(actionOk)">OK</button>
+        <button class="btn btn-link btn-sm pull-right" type="button" (click)="onHandleAction(actionCancel)">Cancel</button>
       </div>
     </div>
   </div>

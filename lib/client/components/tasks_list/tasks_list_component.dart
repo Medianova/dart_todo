@@ -19,7 +19,6 @@ class TasksListComponent {
   @Output() EventEmitter selectTask = new EventEmitter(true);
 
   PromptDialogComponent areYouSureDialog;
-  bool areYouSureDialogVisible = false;
 
   TasksListComponent(this._taskService) {
     tasks = _taskService.tasks;
@@ -36,12 +35,14 @@ class TasksListComponent {
 
   void onDeleteTask(Task t) {
     areYouSureDialog.show("Are you sure?",
-        "Deletion of this task is permanent. Once you delete it will be lost forever!",
+        "Deletion of this task is permanent. Once you delete it, it will be lost forever!",
         () {
       _taskService.removeTask(t);
-      areYouSureDialog.hide();
-    }, () {
-      areYouSureDialog.hide();
     });
+  }
+
+  void onAreYouSureAction(String action) {
+    print("here");
+    //areYouSureDialog.actionHandler(action);
   }
 }

@@ -8,6 +8,9 @@ class PromptDialogComponent extends BaseDialog {
   @Input() String title = "Are you sure?";
   @Input() String message = "Are you sure?";
 
+  DialogAction actionOk = DialogAction.OK;
+  DialogAction actionCancel = DialogAction.CANCEL;
+
   Function _onOkFunction;
   Function _onCancelFunction;
 
@@ -21,18 +24,12 @@ class PromptDialogComponent extends BaseDialog {
     _onCancelFunction = onCancelFunction;
   }
 
-  void hide() {
-    _hide();
-  }
-
-  void onOkHandler() {
-    if (_onOkFunction != null) {
+  void actionHandler(DialogAction action) {
+    print("here");
+    hide();
+    if (action == DialogAction.OK && _onOkFunction != null) {
       _onOkFunction();
-    }
-  }
-
-  void onCancelHandler() {
-    if (_onCancelFunction != null) {
+    } else if (action == DialogAction.CANCEL && _onCancelFunction != null) {
       _onCancelFunction();
     }
   }

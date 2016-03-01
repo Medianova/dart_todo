@@ -13,5 +13,6 @@
 <prompt-dialog
   [(title)]="areYouSureDialog.title"
   [(message)]="areYouSureDialog.message"
+  (actionEvent)="onAreYouSureAction($event)"
   *ngIf="areYouSureDialog.isVisible == true">
 </prompt-dialog>
